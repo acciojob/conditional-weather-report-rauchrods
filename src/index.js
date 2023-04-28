@@ -4,4 +4,7 @@ import App from "./components/App";
 
 
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+       <App  temperature = {21} conditions = {"Sunny"} />, 
+document.getElementById("root")
+);

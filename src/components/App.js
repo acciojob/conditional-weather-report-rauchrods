@@ -2,10 +2,11 @@
 import React from "react";
 import './../styles/App.css';
 
-const App = () => {
+
+const App = ({temperature, conditions}) => {
   return (
-    <div>
-        {/* Do not remove the main div */}
+    <div className= {temperature>20? "red-cl" : "blue-cl"}>
+        {temperature + " " +  conditions}
     </div>
   )
 }
